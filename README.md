@@ -256,8 +256,8 @@ mypy
   with per-residue lDDT-Cα.
 * Aggregate PAE statistics when the record provides PAE.
 * Reproducible run manifest, JSON/Markdown reports, run log, exit codes.
-* 103 offline tests + 1 opt-in live test; Ruff and mypy clean; a GitHub Actions
-  workflow is configured for CI (it runs on the first push).
+* 103 offline tests + 1 opt-in live test; Ruff and mypy clean; GitHub Actions CI
+  passes on Python 3.11 and 3.12.
 
 ### IN PROGRESS
 
