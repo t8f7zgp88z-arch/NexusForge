@@ -1,0 +1,2012 @@
+{
+  "schema_version": "1.0",
+  "run_id": "P69905-4HHB-A",
+  "generated_at": "2026-11-19T15:21:13.913594Z",
+  "status": "SUCCESS",
+  "request": {
+    "uniprot_accession": "P69905",
+    "pdb_id": "4HHB",
+    "chain_id": "A",
+    "comparison": "alphafold_prediction_vs_experimental_structure"
+  },
+  "software": {
+    "name": "nexusforge",
+    "version": "0.1.0",
+    "python_version": "3.12.14",
+    "platform": "Darwin 24.6.0 (arm64)",
+    "dependencies": {
+      "biopython": "1.88",
+      "httpx": "0.28.1",
+      "numpy": "2.5.5",
+      "pydantic": "2.14.4",
+      "typer": "0.29.2"
+    }
+  },
+  "settings": {
+    "user_agent": "NexusForge/0.1.0 (reproducible protein structure validation; +https://github.com/NexusForge/NexusForge)",
+    "contact": null,
+    "timeout_seconds": 30.0,
+    "max_attempts": 4,
+    "retry_base_delay": 0.5,
+    "retry_max_delay": 8.0,
+    "keep_raw_downloads": true,
+    "min_sequence_identity": 0.9,
+    "min_sequence_coverage": 0.5,
+    "lddt_inclusion_radius": 15.0,
+    "lddt_thresholds": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "fetch_pae": true
+  },
+  "sources": [
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/P69905.json",
+      "fetched_at": "2026-11-19T15:21:15.473979Z",
+      "http_status": 200,
+      "sha256": "78a781ffcbc7ee166af1fac2d696dcd80647849d0c6a0bb0d4fb8dce9ab54c3b",
+      "size_bytes": 241776,
+      "content_type": "application/json",
+      "attempts": 1
+    },
+    {
+      "source": "alphafold",
+      "url": "https://alphafold.ebi.ac.uk/api/prediction/P69905",
+      "fetched_at": "2026-11-19T15:21:15.773556Z",
+      "http_status": 200,
+      "sha256": "af907bb73c411790ac6a24764314287e5cd331c0ed5b13eae9924ce45b27d8f9",
+      "size_bytes": 1987,
+      "content_type": "application/json",
+      "attempts": 1
+    },
+    {
+      "source": "alphafold-file",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-model_v6.cif",
+      "fetched_at": "2026-11-19T15:21:16.248557Z",
+      "http_status": 200,
+      "sha256": "eb7adbdd79775b0d694bacfa4b29872e05f4e56af26af880960d755c3036e230",
+      "size_bytes": 137559,
+      "content_type": "application/octet-stream",
+      "attempts": 1
+    },
+    {
+      "source": "alphafold-confidence",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-confidence_v6.json",
+      "fetched_at": "2026-11-19T15:21:17.026048Z",
+      "http_status": 200,
+      "sha256": "523095e99862ad9fff3f671ab4a8968626b220b056d44199e0b2411e088b530d",
+      "size_bytes": 1930,
+      "content_type": "application/octet-stream",
+      "attempts": 1
+    },
+    {
+      "source": "alphafold-pae",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-predicted_aligned_error_v6.json",
+      "fetched_at": "2026-11-19T15:21:17.389417Z",
+      "http_status": 200,
+      "sha256": "9d6bfee2b49f0391f3be41fdc617bfb70e0b976660d48b422b69b96c2b92fa85",
+      "size_bytes": 40977,
+      "content_type": "application/octet-stream",
+      "attempts": 1
+    },
+    {
+      "source": "rcsb-entry",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/4HHB",
+      "fetched_at": "2026-11-19T15:21:18.439548Z",
+      "http_status": 200,
+      "sha256": "a95a79421b90211667e08cc21555acb6e2c384fe882bb7c9b174eadb4e9fdb1a",
+      "size_bytes": 26055,
+      "content_type": "application/json",
+      "attempts": 1
+    },
+    {
+      "source": "rcsb-entity",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4HHB/1",
+      "fetched_at": "2026-11-19T15:21:18.729203Z",
+      "http_status": 200,
+      "sha256": "f7585e98ac51bca45fabfc4dd8db64e41a673d74c4df390f72c97580a887854b",
+      "size_bytes": 53683,
+      "content_type": "application/json",
+      "attempts": 1
+    },
+    {
+      "source": "rcsb-entity",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4HHB/2",
+      "fetched_at": "2026-11-19T15:21:18.932046Z",
+      "http_status": 200,
+      "sha256": "b0fda3e54a7b4fbeba443648514faceee921aeb6fff87d5ebfc0cd204a2cb5ac",
+      "size_bytes": 49486,
+      "content_type": "application/json",
+      "attempts": 1
+    },
+    {
+      "source": "rcsb-file",
+      "url": "https://files.rcsb.org/download/4HHB.cif",
+      "fetched_at": "2026-11-19T15:21:19.508321Z",
+      "http_status": 200,
+      "sha256": "2d3ca1bf21ddff35af2e2bc5d331720f7bfc46a16c4829ea3ec1b41062d5f5a6",
+      "size_bytes": 772198,
+      "content_type": "chemical/x-cif",
+      "attempts": 1
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "predicted_structure_cif",
+      "path": "raw/AF-P69905-F1-model_v6.cif",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-model_v6.cif",
+      "sha256": "eb7adbdd79775b0d694bacfa4b29872e05f4e56af26af880960d755c3036e230",
+      "size_bytes": 137559
+    },
+    {
+      "kind": "experimental_structure_cif",
+      "path": "raw/4HHB.cif",
+      "url": "https://files.rcsb.org/download/4HHB.cif",
+      "sha256": "2d3ca1bf21ddff35af2e2bc5d331720f7bfc46a16c4829ea3ec1b41062d5f5a6",
+      "size_bytes": 772198
+    },
+    {
+      "kind": "uniprot_response",
+      "path": "raw/uniprot__P69905.json",
+      "url": "https://rest.uniprot.org/uniprotkb/P69905.json",
+      "sha256": "78a781ffcbc7ee166af1fac2d696dcd80647849d0c6a0bb0d4fb8dce9ab54c3b",
+      "size_bytes": 241776
+    },
+    {
+      "kind": "alphafold_response",
+      "path": "raw/alphafold__P69905.json",
+      "url": "https://alphafold.ebi.ac.uk/api/prediction/P69905",
+      "sha256": "af907bb73c411790ac6a24764314287e5cd331c0ed5b13eae9924ce45b27d8f9",
+      "size_bytes": 1987
+    },
+    {
+      "kind": "alphafold-confidence_response",
+      "path": "raw/alphafold-confidence__AF-P69905-F1-confidence_v6.json",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-confidence_v6.json",
+      "sha256": "523095e99862ad9fff3f671ab4a8968626b220b056d44199e0b2411e088b530d",
+      "size_bytes": 1930
+    },
+    {
+      "kind": "alphafold-pae_response",
+      "path": "raw/alphafold-pae__AF-P69905-F1-predicted_aligned_error_v6.json",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-predicted_aligned_error_v6.json",
+      "sha256": "9d6bfee2b49f0391f3be41fdc617bfb70e0b976660d48b422b69b96c2b92fa85",
+      "size_bytes": 40977
+    },
+    {
+      "kind": "rcsb-entry_response",
+      "path": "raw/rcsb-entry__4HHB.json",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/4HHB",
+      "sha256": "a95a79421b90211667e08cc21555acb6e2c384fe882bb7c9b174eadb4e9fdb1a",
+      "size_bytes": 26055
+    },
+    {
+      "kind": "rcsb-entity_response",
+      "path": "raw/rcsb-entity__1.json",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4HHB/1",
+      "sha256": "f7585e98ac51bca45fabfc4dd8db64e41a673d74c4df390f72c97580a887854b",
+      "size_bytes": 53683
+    },
+    {
+      "kind": "rcsb-entity_response",
+      "path": "raw/rcsb-entity__2.json",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4HHB/2",
+      "sha256": "b0fda3e54a7b4fbeba443648514faceee921aeb6fff87d5ebfc0cd204a2cb5ac",
+      "size_bytes": 49486
+    },
+    {
+      "kind": "metrics.json",
+      "path": "metrics.json",
+      "url": null,
+      "sha256": "d4364a9cca693e7be3c1db9b6924e4aa7d588ec499316c0c217a283272302666",
+      "size_bytes": 41071
+    },
+    {
+      "kind": "report.md",
+      "path": "report.md",
+      "url": null,
+      "sha256": "d60d68e4226e23ebbdeb0e1c873d31bc926cd010002a0da65c9f9a6e783b846b",
+      "size_bytes": 8634
+    },
+    {
+      "kind": "run_log",
+      "path": "logs/run.log",
+      "url": null,
+      "sha256": "88005d51bedbcb9617490ab34fdc932c9d23c9c838067b42cf689e532d15494c",
+      "size_bytes": 1368
+    }
+  ],
+  "data": {
+    "uniprot": {
+      "accession": "P69905",
+      "entry_name": "HBA_HUMAN",
+      "protein_name": "Hemoglobin subunit alpha",
+      "alternative_names": [
+        "Alpha-globin",
+        "Hemoglobin alpha chain"
+      ],
+      "gene_names": [
+        "HBA1",
+        "HBA2"
+      ],
+      "organism": "Homo sapiens",
+      "taxon_id": 9606,
+      "reviewed": true,
+      "sequence_length": 142,
+      "sequence_md5": "6077C452D1DC6151040B2B179E2294C7",
+      "ambiguous_residues": []
+    },
+    "alphafold": {
+      "entry_id": "AF-P69905-F1",
+      "model_entity_id": "AF-P69905-F1",
+      "tool_used": "AlphaFold Monomer v2.0 pipeline",
+      "latest_version": 6,
+      "model_created_date": "2025-08-01T00:00:00+00:00",
+      "global_plddt": 98.06,
+      "sequence_length": 142,
+      "sequence_start": 1,
+      "sequence_end": 142,
+      "chain_id": "A",
+      "is_complex": false,
+      "files": {
+        "cif_url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-model_v6.cif",
+        "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-model_v6.pdb",
+        "plddt_doc_url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-confidence_v6.json",
+        "pae_doc_url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-predicted_aligned_error_v6.json",
+        "pae_image_url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-predicted_aligned_error_v6.png",
+        "msa_url": "https://alphafold.ebi.ac.uk/files/msa/AF-P69905-F1-msa_v6.a3m"
+      },
+      "pae_available": true
+    },
+    "experimental": {
+      "pdb_id": "4HHB",
+      "title": "THE CRYSTAL STRUCTURE OF HUMAN DEOXYHAEMOGLOBIN AT 1.74 ANGSTROMS RESOLUTION",
+      "experimental_methods": [
+        "X-RAY DIFFRACTION"
+      ],
+      "resolution_angstrom": 1.74,
+      "deposited_at": "1984-03-07T00:00:00+00:00",
+      "released_at": "1984-07-17T00:00:00+00:00",
+      "last_revision_at": "2026-08-12T00:00:00+00:00",
+      "deposited_atom_count": 4779,
+      "entity_id": "1",
+      "entity_name": "Hemoglobin subunit alpha",
+      "uniprot_accessions": [
+        "P69905"
+      ],
+      "coverage_of_reference": 0.9929577464788732,
+      "chain_id": "A"
+    },
+    "traces": {
+      "experimental": {
+        "label": "pdb:4HHB",
+        "chain_id": "A",
+        "residue_count": 141,
+        "first_residue_number": 1,
+        "last_residue_number": 141,
+        "non_standard_residues": [
+          "HEM"
+        ],
+        "duplicate_residue_numbers": []
+      },
+      "prediction": {
+        "label": "alphafold:AF-P69905-F1",
+        "chain_id": "A",
+        "residue_count": 142,
+        "first_residue_number": 1,
+        "last_residue_number": 142,
+        "non_standard_residues": [],
+        "duplicate_residue_numbers": []
+      }
+    }
+  },
+  "alignment": {
+    "uniprot_vs_alphafold": {
+      "query_id": "uniprot:P69905",
+      "target_id": "alphafold:AF-P69905-F1",
+      "query_length": 142,
+      "target_length": 142,
+      "aligned_length": 142,
+      "matches": 142,
+      "mismatches": 0,
+      "gap_openings": 0,
+      "gap_positions": 0,
+      "identity": 1.0,
+      "coverage_query": 1.0,
+      "coverage_target": 1.0,
+      "n_optimal_alignments": 1,
+      "mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14,
+        "15": 15,
+        "16": 16,
+        "17": 17,
+        "18": 18,
+        "19": 19,
+        "20": 20,
+        "21": 21,
+        "22": 22,
+        "23": 23,
+        "24": 24,
+        "25": 25,
+        "26": 26,
+        "27": 27,
+        "28": 28,
+        "29": 29,
+        "30": 30,
+        "31": 31,
+        "32": 32,
+        "33": 33,
+        "34": 34,
+        "35": 35,
+        "36": 36,
+        "37": 37,
+        "38": 38,
+        "39": 39,
+        "40": 40,
+        "41": 41,
+        "42": 42,
+        "43": 43,
+        "44": 44,
+        "45": 45,
+        "46": 46,
+        "47": 47,
+        "48": 48,
+        "49": 49,
+        "50": 50,
+        "51": 51,
+        "52": 52,
+        "53": 53,
+        "54": 54,
+        "55": 55,
+        "56": 56,
+        "57": 57,
+        "58": 58,
+        "59": 59,
+        "60": 60,
+        "61": 61,
+        "62": 62,
+        "63": 63,
+        "64": 64,
+        "65": 65,
+        "66": 66,
+        "67": 67,
+        "68": 68,
+        "69": 69,
+        "70": 70,
+        "71": 71,
+        "72": 72,
+        "73": 73,
+        "74": 74,
+        "75": 75,
+        "76": 76,
+        "77": 77,
+        "78": 78,
+        "79": 79,
+        "80": 80,
+        "81": 81,
+        "82": 82,
+        "83": 83,
+        "84": 84,
+        "85": 85,
+        "86": 86,
+        "87": 87,
+        "88": 88,
+        "89": 89,
+        "90": 90,
+        "91": 91,
+        "92": 92,
+        "93": 93,
+        "94": 94,
+        "95": 95,
+        "96": 96,
+        "97": 97,
+        "98": 98,
+        "99": 99,
+        "100": 100,
+        "101": 101,
+        "102": 102,
+        "103": 103,
+        "104": 104,
+        "105": 105,
+        "106": 106,
+        "107": 107,
+        "108": 108,
+        "109": 109,
+        "110": 110,
+        "111": 111,
+        "112": 112,
+        "113": 113,
+        "114": 114,
+        "115": 115,
+        "116": 116,
+        "117": 117,
+        "118": 118,
+        "119": 119,
+        "120": 120,
+        "121": 121,
+        "122": 122,
+        "123": 123,
+        "124": 124,
+        "125": 125,
+        "126": 126,
+        "127": 127,
+        "128": 128,
+        "129": 129,
+        "130": 130,
+        "131": 131,
+        "132": 132,
+        "133": 133,
+        "134": 134,
+        "135": 135,
+        "136": 136,
+        "137": 137,
+        "138": 138,
+        "139": 139,
+        "140": 140,
+        "141": 141
+      },
+      "aligned_query_preview": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNA",
+      "aligned_target_preview": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNA"
+    },
+    "uniprot_vs_pdb_entity": {
+      "query_id": "uniprot:P69905",
+      "target_id": "pdb:4HHB/entity:1",
+      "query_length": 142,
+      "target_length": 141,
+      "aligned_length": 142,
+      "matches": 141,
+      "mismatches": 0,
+      "gap_openings": 1,
+      "gap_positions": 1,
+      "identity": 1.0,
+      "coverage_query": 0.992958,
+      "coverage_target": 1.0,
+      "n_optimal_alignments": 1,
+      "mapping": {
+        "1": 0,
+        "2": 1,
+        "3": 2,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6,
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "11": 10,
+        "12": 11,
+        "13": 12,
+        "14": 13,
+        "15": 14,
+        "16": 15,
+        "17": 16,
+        "18": 17,
+        "19": 18,
+        "20": 19,
+        "21": 20,
+        "22": 21,
+        "23": 22,
+        "24": 23,
+        "25": 24,
+        "26": 25,
+        "27": 26,
+        "28": 27,
+        "29": 28,
+        "30": 29,
+        "31": 30,
+        "32": 31,
+        "33": 32,
+        "34": 33,
+        "35": 34,
+        "36": 35,
+        "37": 36,
+        "38": 37,
+        "39": 38,
+        "40": 39,
+        "41": 40,
+        "42": 41,
+        "43": 42,
+        "44": 43,
+        "45": 44,
+        "46": 45,
+        "47": 46,
+        "48": 47,
+        "49": 48,
+        "50": 49,
+        "51": 50,
+        "52": 51,
+        "53": 52,
+        "54": 53,
+        "55": 54,
+        "56": 55,
+        "57": 56,
+        "58": 57,
+        "59": 58,
+        "60": 59,
+        "61": 60,
+        "62": 61,
+        "63": 62,
+        "64": 63,
+        "65": 64,
+        "66": 65,
+        "67": 66,
+        "68": 67,
+        "69": 68,
+        "70": 69,
+        "71": 70,
+        "72": 71,
+        "73": 72,
+        "74": 73,
+        "75": 74,
+        "76": 75,
+        "77": 76,
+        "78": 77,
+        "79": 78,
+        "80": 79,
+        "81": 80,
+        "82": 81,
+        "83": 82,
+        "84": 83,
+        "85": 84,
+        "86": 85,
+        "87": 86,
+        "88": 87,
+        "89": 88,
+        "90": 89,
+        "91": 90,
+        "92": 91,
+        "93": 92,
+        "94": 93,
+        "95": 94,
+        "96": 95,
+        "97": 96,
+        "98": 97,
+        "99": 98,
+        "100": 99,
+        "101": 100,
+        "102": 101,
+        "103": 102,
+        "104": 103,
+        "105": 104,
+        "106": 105,
+        "107": 106,
+        "108": 107,
+        "109": 108,
+        "110": 109,
+        "111": 110,
+        "112": 111,
+        "113": 112,
+        "114": 113,
+        "115": 114,
+        "116": 115,
+        "117": 116,
+        "118": 117,
+        "119": 118,
+        "120": 119,
+        "121": 120,
+        "122": 121,
+        "123": 122,
+        "124": 123,
+        "125": 124,
+        "126": 125,
+        "127": 126,
+        "128": 127,
+        "129": 128,
+        "130": 129,
+        "131": 130,
+        "132": 131,
+        "133": 132,
+        "134": 133,
+        "135": 134,
+        "136": 135,
+        "137": 136,
+        "138": 137,
+        "139": 138,
+        "140": 139,
+        "141": 140
+      },
+      "aligned_query_preview": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNA",
+      "aligned_target_preview": "-VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNA"
+    }
+  },
+  "checks": [
+    {
+      "check_id": "uniprot_sequence_valid",
+      "title": "UniProt sequence uses valid amino-acid characters",
+      "status": "passed",
+      "detail": "142 residues, 0 ambiguous code(s)",
+      "metrics": {
+        "length": 142
+      }
+    },
+    {
+      "check_id": "alphafold_sequence_matches_uniprot",
+      "title": "AlphaFold model sequence corresponds to the UniProt entry",
+      "status": "passed",
+      "detail": "identity 100.00%, coverage 100.00%",
+      "metrics": {
+        "identity": 1.0,
+        "coverage": 1.0
+      }
+    },
+    {
+      "check_id": "plddt_count_matches_sequence",
+      "title": "pLDDT vector length equals the modelled sequence length",
+      "status": "passed",
+      "detail": "142 values for 142 modelled residues",
+      "metrics": {
+        "values": 142
+      }
+    },
+    {
+      "check_id": "pdb_chain_maps_to_uniprot",
+      "title": "Experimental chain is cross-referenced to the UniProt accession",
+      "status": "passed",
+      "detail": "entity 1 of 4HHB lists P69905",
+      "metrics": {
+        "entity_id": "1",
+        "uniprot_accessions": [
+          "P69905"
+        ]
+      }
+    },
+    {
+      "check_id": "pdb_entity_sequence_matches_uniprot",
+      "title": "Experimental entity sequence corresponds to the UniProt entry",
+      "status": "passed",
+      "detail": "identity 100.00%, coverage 99.30%, 1 gap(s), 1 residue position(s) absent from one side",
+      "metrics": {
+        "identity": 1.0,
+        "coverage_query": 0.992958,
+        "gap_openings": 1
+      }
+    },
+    {
+      "check_id": "coordinates_parsed",
+      "title": "Both structures parsed into Cα traces",
+      "status": "passed",
+      "detail": "experimental 141 Cα, prediction 142 Cα",
+      "metrics": {
+        "experimental_residues": 141,
+        "predicted_residues": 142
+      }
+    },
+    {
+      "check_id": "lddt_ca_defined",
+      "title": "lDDT-Cα has defined residue pairs and scored residues",
+      "status": "passed",
+      "detail": "3078 pairs within 15.0 Å, 141 residues scored",
+      "metrics": {
+        "pairs": 3078,
+        "scored_residues": 141
+      }
+    },
+    {
+      "check_id": "rmsd_computed",
+      "title": "Cα RMSD computed after optimal superposition",
+      "status": "passed",
+      "detail": "0.335 Å over 141 residues",
+      "metrics": {
+        "rmsd_angstrom": 0.3349117837303932
+      }
+    },
+    {
+      "check_id": "plddt_matches_model_bfactors",
+      "title": "Confidence JSON agrees with the pLDDT stored in the model file",
+      "status": "passed",
+      "detail": "largest |Δ| = 0.0000",
+      "metrics": {
+        "max_abs_delta": 0.0
+      }
+    },
+    {
+      "check_id": "plddt_range_valid",
+      "title": "pLDDT values lie in [0, 100] and cover the model",
+      "status": "passed",
+      "detail": "min 65.38, max 98.88, 142 residues",
+      "metrics": {
+        "min_plddt": 65.38,
+        "max_plddt": 98.88
+      }
+    },
+    {
+      "check_id": "pae_statistics",
+      "title": "Predicted aligned error statistics extracted",
+      "status": "passed",
+      "detail": "mean 2.062 Å",
+      "metrics": {}
+    },
+    {
+      "check_id": "tm_score",
+      "title": "TM-score comparison",
+      "status": "skipped",
+      "detail": "not implemented in v0.1: no validated structure-alignment program is bundled",
+      "metrics": {}
+    }
+  ],
+  "metrics": {
+    "sequence": {
+      "uniprot_length": 142,
+      "alphafold_identity": 1.0,
+      "alphafold_coverage": 1.0,
+      "pdb_entity_identity": 1.0,
+      "pdb_entity_coverage_query": 0.992958,
+      "pdb_entity_coverage_target": 1.0,
+      "pdb_entity_gap_openings": 1,
+      "pdb_entity_mismatches": 0
+    },
+    "structure": {
+      "mapped_residue_count": 141,
+      "experimental_residue_count": 141,
+      "predicted_residue_count": 142,
+      "experimental_only_residues": [],
+      "predicted_only_residues": [
+        1
+      ],
+      "rmsd_angstrom": 0.334912,
+      "lddt_ca": 0.992121,
+      "lddt_ca_per_threshold": {
+        "0.5": 0.968483,
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "lddt_ca_pairs": 3078,
+      "lddt_ca_residues_scored": 141,
+      "lddt_ca_residues_unscored": 0,
+      "lddt_ca_inclusion_radius": 15.0,
+      "lddt_ca_thresholds": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "per_residue": [
+        {
+          "uniprot_position": 2,
+          "experimental_residue_number": 1,
+          "predicted_sequence_position": 2,
+          "residue_name": "VAL",
+          "plddt": 91.12,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 3,
+          "experimental_residue_number": 2,
+          "predicted_sequence_position": 3,
+          "residue_name": "LEU",
+          "plddt": 97.94,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 4,
+          "experimental_residue_number": 3,
+          "predicted_sequence_position": 4,
+          "residue_name": "SER",
+          "plddt": 98.5,
+          "lddt_ca": 0.9916666666666667
+        },
+        {
+          "uniprot_position": 5,
+          "experimental_residue_number": 4,
+          "predicted_sequence_position": 5,
+          "residue_name": "PRO",
+          "plddt": 98.5,
+          "lddt_ca": 0.9310344827586207
+        },
+        {
+          "uniprot_position": 6,
+          "experimental_residue_number": 5,
+          "predicted_sequence_position": 6,
+          "residue_name": "ALA",
+          "plddt": 98.56,
+          "lddt_ca": 0.9568965517241379
+        },
+        {
+          "uniprot_position": 7,
+          "experimental_residue_number": 6,
+          "predicted_sequence_position": 7,
+          "residue_name": "ASP",
+          "plddt": 98.81,
+          "lddt_ca": 0.9807692307692308
+        },
+        {
+          "uniprot_position": 8,
+          "experimental_residue_number": 7,
+          "predicted_sequence_position": 8,
+          "residue_name": "LYS",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 9,
+          "experimental_residue_number": 8,
+          "predicted_sequence_position": 9,
+          "residue_name": "THR",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 10,
+          "experimental_residue_number": 9,
+          "predicted_sequence_position": 10,
+          "residue_name": "ASN",
+          "plddt": 98.75,
+          "lddt_ca": 0.9946808510638298
+        },
+        {
+          "uniprot_position": 11,
+          "experimental_residue_number": 10,
+          "predicted_sequence_position": 11,
+          "residue_name": "VAL",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 12,
+          "experimental_residue_number": 11,
+          "predicted_sequence_position": 12,
+          "residue_name": "LYS",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 13,
+          "experimental_residue_number": 12,
+          "predicted_sequence_position": 13,
+          "residue_name": "ALA",
+          "plddt": 98.38,
+          "lddt_ca": 0.9791666666666666
+        },
+        {
+          "uniprot_position": 14,
+          "experimental_residue_number": 13,
+          "predicted_sequence_position": 14,
+          "residue_name": "ALA",
+          "plddt": 98.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 15,
+          "experimental_residue_number": 14,
+          "predicted_sequence_position": 15,
+          "residue_name": "TRP",
+          "plddt": 98.19,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 16,
+          "experimental_residue_number": 15,
+          "predicted_sequence_position": 16,
+          "residue_name": "GLY",
+          "plddt": 98.06,
+          "lddt_ca": 0.9821428571428572
+        },
+        {
+          "uniprot_position": 17,
+          "experimental_residue_number": 16,
+          "predicted_sequence_position": 17,
+          "residue_name": "LYS",
+          "plddt": 97.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 18,
+          "experimental_residue_number": 17,
+          "predicted_sequence_position": 18,
+          "residue_name": "VAL",
+          "plddt": 97.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 19,
+          "experimental_residue_number": 18,
+          "predicted_sequence_position": 19,
+          "residue_name": "GLY",
+          "plddt": 94.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 20,
+          "experimental_residue_number": 19,
+          "predicted_sequence_position": 20,
+          "residue_name": "ALA",
+          "plddt": 96.38,
+          "lddt_ca": 0.9926470588235294
+        },
+        {
+          "uniprot_position": 21,
+          "experimental_residue_number": 20,
+          "predicted_sequence_position": 21,
+          "residue_name": "HIS",
+          "plddt": 97.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 22,
+          "experimental_residue_number": 21,
+          "predicted_sequence_position": 22,
+          "residue_name": "ALA",
+          "plddt": 97.25,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 23,
+          "experimental_residue_number": 22,
+          "predicted_sequence_position": 23,
+          "residue_name": "GLY",
+          "plddt": 97.0,
+          "lddt_ca": 0.9895833333333334
+        },
+        {
+          "uniprot_position": 24,
+          "experimental_residue_number": 23,
+          "predicted_sequence_position": 24,
+          "residue_name": "GLU",
+          "plddt": 98.44,
+          "lddt_ca": 0.9893617021276596
+        },
+        {
+          "uniprot_position": 25,
+          "experimental_residue_number": 24,
+          "predicted_sequence_position": 25,
+          "residue_name": "TYR",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 26,
+          "experimental_residue_number": 25,
+          "predicted_sequence_position": 26,
+          "residue_name": "GLY",
+          "plddt": 98.69,
+          "lddt_ca": 0.9919354838709677
+        },
+        {
+          "uniprot_position": 27,
+          "experimental_residue_number": 26,
+          "predicted_sequence_position": 27,
+          "residue_name": "ALA",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 28,
+          "experimental_residue_number": 27,
+          "predicted_sequence_position": 28,
+          "residue_name": "GLU",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 29,
+          "experimental_residue_number": 28,
+          "predicted_sequence_position": 29,
+          "residue_name": "ALA",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 30,
+          "experimental_residue_number": 29,
+          "predicted_sequence_position": 30,
+          "residue_name": "LEU",
+          "plddt": 98.88,
+          "lddt_ca": 0.9959677419354839
+        },
+        {
+          "uniprot_position": 31,
+          "experimental_residue_number": 30,
+          "predicted_sequence_position": 31,
+          "residue_name": "GLU",
+          "plddt": 98.88,
+          "lddt_ca": 0.9954545454545455
+        },
+        {
+          "uniprot_position": 32,
+          "experimental_residue_number": 31,
+          "predicted_sequence_position": 32,
+          "residue_name": "ARG",
+          "plddt": 98.88,
+          "lddt_ca": 0.9945652173913043
+        },
+        {
+          "uniprot_position": 33,
+          "experimental_residue_number": 32,
+          "predicted_sequence_position": 33,
+          "residue_name": "MET",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 34,
+          "experimental_residue_number": 33,
+          "predicted_sequence_position": 34,
+          "residue_name": "PHE",
+          "plddt": 98.81,
+          "lddt_ca": 0.9787234042553191
+        },
+        {
+          "uniprot_position": 35,
+          "experimental_residue_number": 34,
+          "predicted_sequence_position": 35,
+          "residue_name": "LEU",
+          "plddt": 98.75,
+          "lddt_ca": 0.9861111111111112
+        },
+        {
+          "uniprot_position": 36,
+          "experimental_residue_number": 35,
+          "predicted_sequence_position": 36,
+          "residue_name": "SER",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 37,
+          "experimental_residue_number": 36,
+          "predicted_sequence_position": 37,
+          "residue_name": "PHE",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 38,
+          "experimental_residue_number": 37,
+          "predicted_sequence_position": 38,
+          "residue_name": "PRO",
+          "plddt": 98.56,
+          "lddt_ca": 0.9921875
+        },
+        {
+          "uniprot_position": 39,
+          "experimental_residue_number": 38,
+          "predicted_sequence_position": 39,
+          "residue_name": "THR",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 40,
+          "experimental_residue_number": 39,
+          "predicted_sequence_position": 40,
+          "residue_name": "THR",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 41,
+          "experimental_residue_number": 40,
+          "predicted_sequence_position": 41,
+          "residue_name": "LYS",
+          "plddt": 98.69,
+          "lddt_ca": 0.9939024390243902
+        },
+        {
+          "uniprot_position": 42,
+          "experimental_residue_number": 41,
+          "predicted_sequence_position": 42,
+          "residue_name": "THR",
+          "plddt": 98.56,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 43,
+          "experimental_residue_number": 42,
+          "predicted_sequence_position": 43,
+          "residue_name": "TYR",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 44,
+          "experimental_residue_number": 43,
+          "predicted_sequence_position": 44,
+          "residue_name": "PHE",
+          "plddt": 98.62,
+          "lddt_ca": 0.9883720930232558
+        },
+        {
+          "uniprot_position": 45,
+          "experimental_residue_number": 44,
+          "predicted_sequence_position": 45,
+          "residue_name": "PRO",
+          "plddt": 98.38,
+          "lddt_ca": 0.9903846153846154
+        },
+        {
+          "uniprot_position": 46,
+          "experimental_residue_number": 45,
+          "predicted_sequence_position": 46,
+          "residue_name": "HIS",
+          "plddt": 98.25,
+          "lddt_ca": 0.9886363636363636
+        },
+        {
+          "uniprot_position": 47,
+          "experimental_residue_number": 46,
+          "predicted_sequence_position": 47,
+          "residue_name": "PHE",
+          "plddt": 98.5,
+          "lddt_ca": 0.9916666666666667
+        },
+        {
+          "uniprot_position": 48,
+          "experimental_residue_number": 47,
+          "predicted_sequence_position": 48,
+          "residue_name": "ASP",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 49,
+          "experimental_residue_number": 48,
+          "predicted_sequence_position": 49,
+          "residue_name": "LEU",
+          "plddt": 98.75,
+          "lddt_ca": 0.9852941176470589
+        },
+        {
+          "uniprot_position": 50,
+          "experimental_residue_number": 49,
+          "predicted_sequence_position": 50,
+          "residue_name": "SER",
+          "plddt": 98.5,
+          "lddt_ca": 0.9655172413793103
+        },
+        {
+          "uniprot_position": 51,
+          "experimental_residue_number": 50,
+          "predicted_sequence_position": 51,
+          "residue_name": "HIS",
+          "plddt": 98.56,
+          "lddt_ca": 0.8787878787878788
+        },
+        {
+          "uniprot_position": 52,
+          "experimental_residue_number": 51,
+          "predicted_sequence_position": 52,
+          "residue_name": "GLY",
+          "plddt": 97.69,
+          "lddt_ca": 0.9107142857142857
+        },
+        {
+          "uniprot_position": 53,
+          "experimental_residue_number": 52,
+          "predicted_sequence_position": 53,
+          "residue_name": "SER",
+          "plddt": 98.69,
+          "lddt_ca": 0.96875
+        },
+        {
+          "uniprot_position": 54,
+          "experimental_residue_number": 53,
+          "predicted_sequence_position": 54,
+          "residue_name": "ALA",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 55,
+          "experimental_residue_number": 54,
+          "predicted_sequence_position": 55,
+          "residue_name": "GLN",
+          "plddt": 98.81,
+          "lddt_ca": 0.9921875
+        },
+        {
+          "uniprot_position": 56,
+          "experimental_residue_number": 55,
+          "predicted_sequence_position": 56,
+          "residue_name": "VAL",
+          "plddt": 98.81,
+          "lddt_ca": 0.9825581395348837
+        },
+        {
+          "uniprot_position": 57,
+          "experimental_residue_number": 56,
+          "predicted_sequence_position": 57,
+          "residue_name": "LYS",
+          "plddt": 98.81,
+          "lddt_ca": 0.9868421052631579
+        },
+        {
+          "uniprot_position": 58,
+          "experimental_residue_number": 57,
+          "predicted_sequence_position": 58,
+          "residue_name": "GLY",
+          "plddt": 98.75,
+          "lddt_ca": 0.9852941176470589
+        },
+        {
+          "uniprot_position": 59,
+          "experimental_residue_number": 58,
+          "predicted_sequence_position": 59,
+          "residue_name": "HIS",
+          "plddt": 98.75,
+          "lddt_ca": 0.9895833333333334
+        },
+        {
+          "uniprot_position": 60,
+          "experimental_residue_number": 59,
+          "predicted_sequence_position": 60,
+          "residue_name": "GLY",
+          "plddt": 98.75,
+          "lddt_ca": 0.9905660377358491
+        },
+        {
+          "uniprot_position": 61,
+          "experimental_residue_number": 60,
+          "predicted_sequence_position": 61,
+          "residue_name": "LYS",
+          "plddt": 98.69,
+          "lddt_ca": 0.9871794871794872
+        },
+        {
+          "uniprot_position": 62,
+          "experimental_residue_number": 61,
+          "predicted_sequence_position": 62,
+          "residue_name": "LYS",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 63,
+          "experimental_residue_number": 62,
+          "predicted_sequence_position": 63,
+          "residue_name": "VAL",
+          "plddt": 98.56,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 64,
+          "experimental_residue_number": 63,
+          "predicted_sequence_position": 64,
+          "residue_name": "ALA",
+          "plddt": 98.56,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 65,
+          "experimental_residue_number": 64,
+          "predicted_sequence_position": 65,
+          "residue_name": "ASP",
+          "plddt": 98.69,
+          "lddt_ca": 0.995
+        },
+        {
+          "uniprot_position": 66,
+          "experimental_residue_number": 65,
+          "predicted_sequence_position": 66,
+          "residue_name": "ALA",
+          "plddt": 98.62,
+          "lddt_ca": 0.9959016393442623
+        },
+        {
+          "uniprot_position": 67,
+          "experimental_residue_number": 66,
+          "predicted_sequence_position": 67,
+          "residue_name": "LEU",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 68,
+          "experimental_residue_number": 67,
+          "predicted_sequence_position": 68,
+          "residue_name": "THR",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 69,
+          "experimental_residue_number": 68,
+          "predicted_sequence_position": 69,
+          "residue_name": "ASN",
+          "plddt": 98.69,
+          "lddt_ca": 0.9945652173913043
+        },
+        {
+          "uniprot_position": 70,
+          "experimental_residue_number": 69,
+          "predicted_sequence_position": 70,
+          "residue_name": "ALA",
+          "plddt": 98.62,
+          "lddt_ca": 0.9912280701754386
+        },
+        {
+          "uniprot_position": 71,
+          "experimental_residue_number": 70,
+          "predicted_sequence_position": 71,
+          "residue_name": "VAL",
+          "plddt": 98.56,
+          "lddt_ca": 0.9915254237288136
+        },
+        {
+          "uniprot_position": 72,
+          "experimental_residue_number": 71,
+          "predicted_sequence_position": 72,
+          "residue_name": "ALA",
+          "plddt": 98.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 73,
+          "experimental_residue_number": 72,
+          "predicted_sequence_position": 73,
+          "residue_name": "HIS",
+          "plddt": 98.5,
+          "lddt_ca": 0.9573170731707317
+        },
+        {
+          "uniprot_position": 74,
+          "experimental_residue_number": 73,
+          "predicted_sequence_position": 74,
+          "residue_name": "VAL",
+          "plddt": 98.19,
+          "lddt_ca": 0.9891304347826086
+        },
+        {
+          "uniprot_position": 75,
+          "experimental_residue_number": 74,
+          "predicted_sequence_position": 75,
+          "residue_name": "ASP",
+          "plddt": 97.88,
+          "lddt_ca": 0.9797297297297297
+        },
+        {
+          "uniprot_position": 76,
+          "experimental_residue_number": 75,
+          "predicted_sequence_position": 76,
+          "residue_name": "ASP",
+          "plddt": 98.19,
+          "lddt_ca": 0.9662162162162162
+        },
+        {
+          "uniprot_position": 77,
+          "experimental_residue_number": 76,
+          "predicted_sequence_position": 77,
+          "residue_name": "MET",
+          "plddt": 98.38,
+          "lddt_ca": 0.9944444444444445
+        },
+        {
+          "uniprot_position": 78,
+          "experimental_residue_number": 77,
+          "predicted_sequence_position": 78,
+          "residue_name": "PRO",
+          "plddt": 98.31,
+          "lddt_ca": 0.9802631578947368
+        },
+        {
+          "uniprot_position": 79,
+          "experimental_residue_number": 78,
+          "predicted_sequence_position": 79,
+          "residue_name": "ASN",
+          "plddt": 98.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 80,
+          "experimental_residue_number": 79,
+          "predicted_sequence_position": 80,
+          "residue_name": "ALA",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 81,
+          "experimental_residue_number": 80,
+          "predicted_sequence_position": 81,
+          "residue_name": "LEU",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 82,
+          "experimental_residue_number": 81,
+          "predicted_sequence_position": 82,
+          "residue_name": "SER",
+          "plddt": 98.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 83,
+          "experimental_residue_number": 82,
+          "predicted_sequence_position": 83,
+          "residue_name": "ALA",
+          "plddt": 98.56,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 84,
+          "experimental_residue_number": 83,
+          "predicted_sequence_position": 84,
+          "residue_name": "LEU",
+          "plddt": 98.62,
+          "lddt_ca": 0.9944444444444445
+        },
+        {
+          "uniprot_position": 85,
+          "experimental_residue_number": 84,
+          "predicted_sequence_position": 85,
+          "residue_name": "SER",
+          "plddt": 98.38,
+          "lddt_ca": 0.9880952380952381
+        },
+        {
+          "uniprot_position": 86,
+          "experimental_residue_number": 85,
+          "predicted_sequence_position": 86,
+          "residue_name": "ASP",
+          "plddt": 98.38,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 87,
+          "experimental_residue_number": 86,
+          "predicted_sequence_position": 87,
+          "residue_name": "LEU",
+          "plddt": 98.56,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 88,
+          "experimental_residue_number": 87,
+          "predicted_sequence_position": 88,
+          "residue_name": "HIS",
+          "plddt": 98.5,
+          "lddt_ca": 0.9940476190476191
+        },
+        {
+          "uniprot_position": 89,
+          "experimental_residue_number": 88,
+          "predicted_sequence_position": 89,
+          "residue_name": "ALA",
+          "plddt": 97.44,
+          "lddt_ca": 0.9583333333333334
+        },
+        {
+          "uniprot_position": 90,
+          "experimental_residue_number": 89,
+          "predicted_sequence_position": 90,
+          "residue_name": "HIS",
+          "plddt": 97.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 91,
+          "experimental_residue_number": 90,
+          "predicted_sequence_position": 91,
+          "residue_name": "LYS",
+          "plddt": 97.44,
+          "lddt_ca": 0.9782608695652174
+        },
+        {
+          "uniprot_position": 92,
+          "experimental_residue_number": 91,
+          "predicted_sequence_position": 92,
+          "residue_name": "LEU",
+          "plddt": 97.5,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 93,
+          "experimental_residue_number": 92,
+          "predicted_sequence_position": 93,
+          "residue_name": "ARG",
+          "plddt": 96.69,
+          "lddt_ca": 0.9765625
+        },
+        {
+          "uniprot_position": 94,
+          "experimental_residue_number": 93,
+          "predicted_sequence_position": 94,
+          "residue_name": "VAL",
+          "plddt": 97.81,
+          "lddt_ca": 0.9941860465116279
+        },
+        {
+          "uniprot_position": 95,
+          "experimental_residue_number": 94,
+          "predicted_sequence_position": 95,
+          "residue_name": "ASP",
+          "plddt": 98.25,
+          "lddt_ca": 0.9932432432432432
+        },
+        {
+          "uniprot_position": 96,
+          "experimental_residue_number": 95,
+          "predicted_sequence_position": 96,
+          "residue_name": "PRO",
+          "plddt": 98.19,
+          "lddt_ca": 0.98125
+        },
+        {
+          "uniprot_position": 97,
+          "experimental_residue_number": 96,
+          "predicted_sequence_position": 97,
+          "residue_name": "VAL",
+          "plddt": 98.0,
+          "lddt_ca": 0.9930555555555556
+        },
+        {
+          "uniprot_position": 98,
+          "experimental_residue_number": 97,
+          "predicted_sequence_position": 98,
+          "residue_name": "ASN",
+          "plddt": 98.5,
+          "lddt_ca": 0.9840425531914894
+        },
+        {
+          "uniprot_position": 99,
+          "experimental_residue_number": 98,
+          "predicted_sequence_position": 99,
+          "residue_name": "PHE",
+          "plddt": 98.56,
+          "lddt_ca": 0.9957627118644068
+        },
+        {
+          "uniprot_position": 100,
+          "experimental_residue_number": 99,
+          "predicted_sequence_position": 100,
+          "residue_name": "LYS",
+          "plddt": 98.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 101,
+          "experimental_residue_number": 100,
+          "predicted_sequence_position": 101,
+          "residue_name": "LEU",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 102,
+          "experimental_residue_number": 101,
+          "predicted_sequence_position": 102,
+          "residue_name": "LEU",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 103,
+          "experimental_residue_number": 102,
+          "predicted_sequence_position": 103,
+          "residue_name": "SER",
+          "plddt": 98.81,
+          "lddt_ca": 0.9959016393442623
+        },
+        {
+          "uniprot_position": 104,
+          "experimental_residue_number": 103,
+          "predicted_sequence_position": 104,
+          "residue_name": "HIS",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 105,
+          "experimental_residue_number": 104,
+          "predicted_sequence_position": 105,
+          "residue_name": "CYS",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 106,
+          "experimental_residue_number": 105,
+          "predicted_sequence_position": 106,
+          "residue_name": "LEU",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 107,
+          "experimental_residue_number": 106,
+          "predicted_sequence_position": 107,
+          "residue_name": "LEU",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 108,
+          "experimental_residue_number": 107,
+          "predicted_sequence_position": 108,
+          "residue_name": "VAL",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 109,
+          "experimental_residue_number": 108,
+          "predicted_sequence_position": 109,
+          "residue_name": "THR",
+          "plddt": 98.88,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 110,
+          "experimental_residue_number": 109,
+          "predicted_sequence_position": 110,
+          "residue_name": "LEU",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 111,
+          "experimental_residue_number": 110,
+          "predicted_sequence_position": 111,
+          "residue_name": "ALA",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 112,
+          "experimental_residue_number": 111,
+          "predicted_sequence_position": 112,
+          "residue_name": "ALA",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 113,
+          "experimental_residue_number": 112,
+          "predicted_sequence_position": 113,
+          "residue_name": "HIS",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 114,
+          "experimental_residue_number": 113,
+          "predicted_sequence_position": 114,
+          "residue_name": "LEU",
+          "plddt": 97.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 115,
+          "experimental_residue_number": 114,
+          "predicted_sequence_position": 115,
+          "residue_name": "PRO",
+          "plddt": 96.06,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 116,
+          "experimental_residue_number": 115,
+          "predicted_sequence_position": 116,
+          "residue_name": "ALA",
+          "plddt": 97.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 117,
+          "experimental_residue_number": 116,
+          "predicted_sequence_position": 117,
+          "residue_name": "GLU",
+          "plddt": 97.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 118,
+          "experimental_residue_number": 117,
+          "predicted_sequence_position": 118,
+          "residue_name": "PHE",
+          "plddt": 98.06,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 119,
+          "experimental_residue_number": 118,
+          "predicted_sequence_position": 119,
+          "residue_name": "THR",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 120,
+          "experimental_residue_number": 119,
+          "predicted_sequence_position": 120,
+          "residue_name": "PRO",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 121,
+          "experimental_residue_number": 120,
+          "predicted_sequence_position": 121,
+          "residue_name": "ALA",
+          "plddt": 98.62,
+          "lddt_ca": 0.9921875
+        },
+        {
+          "uniprot_position": 122,
+          "experimental_residue_number": 121,
+          "predicted_sequence_position": 122,
+          "residue_name": "VAL",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 123,
+          "experimental_residue_number": 122,
+          "predicted_sequence_position": 123,
+          "residue_name": "HIS",
+          "plddt": 98.81,
+          "lddt_ca": 0.9943181818181819
+        },
+        {
+          "uniprot_position": 124,
+          "experimental_residue_number": 123,
+          "predicted_sequence_position": 124,
+          "residue_name": "ALA",
+          "plddt": 98.62,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 125,
+          "experimental_residue_number": 124,
+          "predicted_sequence_position": 125,
+          "residue_name": "SER",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 126,
+          "experimental_residue_number": 125,
+          "predicted_sequence_position": 126,
+          "residue_name": "LEU",
+          "plddt": 98.75,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 127,
+          "experimental_residue_number": 126,
+          "predicted_sequence_position": 127,
+          "residue_name": "ASP",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 128,
+          "experimental_residue_number": 127,
+          "predicted_sequence_position": 128,
+          "residue_name": "LYS",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 129,
+          "experimental_residue_number": 128,
+          "predicted_sequence_position": 129,
+          "residue_name": "PHE",
+          "plddt": 98.81,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 130,
+          "experimental_residue_number": 129,
+          "predicted_sequence_position": 130,
+          "residue_name": "LEU",
+          "plddt": 98.69,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 131,
+          "experimental_residue_number": 130,
+          "predicted_sequence_position": 131,
+          "residue_name": "ALA",
+          "plddt": 98.5,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 132,
+          "experimental_residue_number": 131,
+          "predicted_sequence_position": 132,
+          "residue_name": "SER",
+          "plddt": 98.44,
+          "lddt_ca": 0.9955357142857143
+        },
+        {
+          "uniprot_position": 133,
+          "experimental_residue_number": 132,
+          "predicted_sequence_position": 133,
+          "residue_name": "VAL",
+          "plddt": 98.56,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 134,
+          "experimental_residue_number": 133,
+          "predicted_sequence_position": 134,
+          "residue_name": "SER",
+          "plddt": 98.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 135,
+          "experimental_residue_number": 134,
+          "predicted_sequence_position": 135,
+          "residue_name": "THR",
+          "plddt": 98.06,
+          "lddt_ca": 0.995
+        },
+        {
+          "uniprot_position": 136,
+          "experimental_residue_number": 135,
+          "predicted_sequence_position": 136,
+          "residue_name": "VAL",
+          "plddt": 98.25,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 137,
+          "experimental_residue_number": 136,
+          "predicted_sequence_position": 137,
+          "residue_name": "LEU",
+          "plddt": 98.5,
+          "lddt_ca": 0.9953703703703703
+        },
+        {
+          "uniprot_position": 138,
+          "experimental_residue_number": 137,
+          "predicted_sequence_position": 138,
+          "residue_name": "THR",
+          "plddt": 98.19,
+          "lddt_ca": 0.9880952380952381
+        },
+        {
+          "uniprot_position": 139,
+          "experimental_residue_number": 138,
+          "predicted_sequence_position": 139,
+          "residue_name": "SER",
+          "plddt": 97.69,
+          "lddt_ca": 0.9868421052631579
+        },
+        {
+          "uniprot_position": 140,
+          "experimental_residue_number": 139,
+          "predicted_sequence_position": 140,
+          "residue_name": "LYS",
+          "plddt": 97.81,
+          "lddt_ca": 0.9919354838709677
+        },
+        {
+          "uniprot_position": 141,
+          "experimental_residue_number": 140,
+          "predicted_sequence_position": 141,
+          "residue_name": "TYR",
+          "plddt": 96.44,
+          "lddt_ca": 1.0
+        },
+        {
+          "uniprot_position": 142,
+          "experimental_residue_number": 141,
+          "predicted_sequence_position": 142,
+          "residue_name": "ARG",
+          "plddt": 92.25,
+          "lddt_ca": 0.9880952380952381
+        }
+      ],
+      "notes": [
+        "lDDT-Cα uses Cα atoms only; it is not a full-atom lDDT.",
+        "RMSD uses the same Cα correspondence after Kabsch superposition.",
+        "lDDT-Cα is superposition-free by definition; the superposition is only for RMSD."
+      ]
+    },
+    "confidence": {
+      "source": "alphafold_confidence_json",
+      "residue_count": 142,
+      "min_plddt": 65.38,
+      "max_plddt": 98.88,
+      "mean_plddt": 98.0637323943662,
+      "median_plddt": 98.56,
+      "bins": [
+        {
+          "label": "Very low",
+          "lower": 0.0,
+          "upper": 50.0,
+          "residue_count": 0,
+          "fraction": 0.0,
+          "mean_lddt_ca": null
+        },
+        {
+          "label": "Low",
+          "lower": 50.0,
+          "upper": 70.0,
+          "residue_count": 1,
+          "fraction": 0.007042253521126761,
+          "mean_lddt_ca": null
+        },
+        {
+          "label": "Confident",
+          "lower": 70.0,
+          "upper": 90.0,
+          "residue_count": 0,
+          "fraction": 0.0,
+          "mean_lddt_ca": null
+        },
+        {
+          "label": "Very high",
+          "lower": 90.0,
+          "upper": 100.0,
+          "residue_count": 141,
+          "fraction": 0.9929577464788732,
+          "mean_lddt_ca": 0.9921206937583436
+        }
+      ],
+      "cross_check_max_abs_delta": 0.0,
+      "pearson_plddt_lddt": 0.029887950155034815,
+      "spearman_plddt_lddt": 0.19177353968955393,
+      "correlated_residue_count": 141,
+      "interpretation": "pLDDT is an AlphaFold per-residue confidence estimate. It is compared with, not equated to, the experimentally referenced lDDT-Cα."
+    },
+    "limitations": [
+      "AlphaFold DB predictions are consumed as published; this project does not run the AlphaFold model itself.",
+      "The comparison uses one experimental chain. Quaternary context (e.g. haemoglobin tetramer assembly) is not modelled or scored.",
+      "Only positions resolved in both structures are compared; unobserved residues are reported, never imputed.",
+      "lDDT-Cα is restricted to Cα atoms and is not comparable with a full-atom lDDT value.",
+      "pLDDT is a model confidence estimate; the lDDT-Cα column is measured against one experimental structure, so agreement or disagreement between them is an observation, not a calibrated error."
+    ],
+    "not_evaluated": [
+      {
+        "metric": "full-atom lDDT",
+        "reason": "v0.1 computes the Cα-only variant (lDDT-Cα); all-atom scoring is planned"
+      },
+      {
+        "metric": "TM-score",
+        "reason": "no validated structure-alignment program is bundled in v0.1"
+      },
+      {
+        "metric": "AlphaFold inference",
+        "reason": "predictions are read from AlphaFold DB; no model is run by this project"
+      },
+      {
+        "metric": "oligomeric assembly assessment",
+        "reason": "only the single requested chain is compared"
+      },
+      {
+        "metric": "per-domain PAE interpretation",
+        "reason": "only aggregate PAE statistics are computed in v0.1"
+      }
+    ],
+    "pae": {
+      "shape": [
+        142,
+        142
+      ],
+      "max_predicted_aligned_error": 31.75,
+      "mean_predicted_aligned_error": 2.0615453283078753,
+      "p90_predicted_aligned_error": 3.0
+    },
+    "timings_seconds": {
+      "total": 5.761
+    }
+  },
+  "warnings": [
+    "Experimental chain contains non-standard residues: HEM"
+  ],
+  "error": null,
+  "reproducible": true,
+  "reproduction_command": "nexusforge protein-smoke --uniprot P69905 --pdb 4HHB --chain A --output runs/P69905-4HHB-A"
+}

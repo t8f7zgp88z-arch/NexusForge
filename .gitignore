@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Run artifacts (large downloads, per-machine caches) ---
+runs/
+!examples/sample-run/
+
+# --- Local secrets and personal configuration ---
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+.netrc
+
+# --- OS / editor noise ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
